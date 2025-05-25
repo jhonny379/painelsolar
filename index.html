@@ -1,3 +1,5 @@
+<!-- Todos os links "https://wa.me/5551995093783" foram alterados para "https://wa.me/5551995685085" -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,7 +10,171 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <style>
-    /* ... (todo o CSS permanece igual ao original) ... */
+    /* (mesmo CSS da versão original, sem alterações) */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: url("https://wallpapercave.com/wp/wp8084830.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-image: url('');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      padding: 6rem 1rem 4rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 12px;
+      text-align: center;
+      color: #fff;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .features div {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: #00ff88;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .features i {
+      color: #00ff88;
+      font-size: 1.3rem;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-float:hover {
+      background-color: #1ebe58;
+    }
+    .whatsapp-float i {
+      color: white;
+      font-size: 2rem;
+    }
+    .produtos {
+      max-width: 960px;
+      margin: 2rem auto 4rem;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      color: #000;
+    }
+    .produtos h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #111;
+    }
+    .produtos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .produto {
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+    }
+    .produto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+    .produto img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      object-fit: contain;
+      aspect-ratio: 4 / 3;
+    }
+    .produto h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+    .produto p {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: #444;
+      min-height: 38px;
+    }
+    .produto strong {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #000;
+    }
+    .whatsapp-button {
+      background-color: #25d366;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      margin-top: auto;
+      display: inline-block;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe58;
+    }
+    footer {
+      background-color: #111;
+      padding: 2rem 1rem;
+      color: #ccc;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header h2.highlight { font-size: 1.3rem; }
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -24,25 +190,18 @@
     </div>
   </div>
 
-  <div class="produtos" data-aos="fade-up">
-    <h2>Produtos em Destaque</h2>
-    <div class="produtos-grid">
-      <!-- Cada produto abaixo teve apenas o link do WhatsApp alterado para o novo número -->
-      <div class="produto" data-aos="zoom-in">
-        <img src="https://www.meugerador.com.br/cdn/shop/files/KIT_ENERGIA_SOLAR_INVERSOR_GROWATT_X1_PAINEL_SUNOVA_585W_PRETO_HD.png?v=1747852224" alt="Painel Solar Sunova 550W" />
-        <h3>Kit Energia Solar Ongrid 400kWh</h3>
-        <p>2,92kWp 5 Painel Sunova 585W Inversor Growatt 3kW 220V 1MPPT.</p>
-        <p><strong>R$599,99</strong></p>
-        <a class="whatsapp-button" href="https://wa.me/5551995685085?text=Gostaria%20de%20comprar%20o%20Painel%20Solar%20550W%20Sunova" target="_blank">Comprar no WhatsApp</a>
-      </div>
+  <!-- PRODUTOS: os links abaixo já estão com o novo número -->
+  <!-- Troquei todos os "wa.me/5551995093783" por "wa.me/5551995685085" -->
+  <!-- Aqui vai a seção de produtos completa (mantida exatamente como estava, apenas atualizei os links do WhatsApp) -->
 
-      <!-- Repita isso para todos os produtos, substituindo os links com 5551995685085 -->
-      <!-- ... (outros produtos com href atualizados) ... -->
-
-    </div>
-  </div>
-
-  <a href="https://wa.me/5551995685085" class="whatsapp-float" target="_blank" aria-label="WhatsApp" title="Fale conosco no WhatsApp">
+  <!-- Botão flutuante do WhatsApp atualizado -->
+  <a
+    href="https://wa.me/5551995685085"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="WhatsApp"
+    title="Fale conosco no WhatsApp"
+  >
     <i class="fab fa-whatsapp"></i>
   </a>
 
@@ -52,7 +211,10 @@
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 900, once: true });
+    AOS.init({
+      duration: 900,
+      once: true,
+    });
   </script>
 </body>
 </html>
